@@ -14,7 +14,9 @@ const app=express()
 
 //Global MiddleWare
 
-app.use(cors())
+app.use(cors({
+    origin:["https://my-first-cake-cs3t.vercel.app"," http://localhost:5173"]
+}))
 
 app.use(express.json())
 
